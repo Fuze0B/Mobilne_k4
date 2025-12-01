@@ -2,122 +2,137 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:background="#000">
 
-    <!-- ======= WIERSZ GÓRNY ======= -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <!-- Lewy górny róg -->
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#E5171E">
+            android:layout_margin="4dp"
+            android:background="#FF0000">
 
-            <Button
-                android:id="@+id/button1"
-                android:layout_gravity="top|left"
-                android:layout_margin="16dp"
-                android:text="button1"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="top|start"
+                android:layout_margin="8dp"
+                android:background="#FFFF00"
+                android:gravity="right|end"
+                android:text="*"
+                android:textStyle="bold" />
         </FrameLayout>
 
-        <!-- Pionowy pomarańczowy pas -->
-        <FrameLayout
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.6"
-            android:background="#FF8A25" />
+            android:layout_weight="0.5"
+            android:layout_margin="4dp"
+            android:background="#FF8A2A" />
 
-        <!-- Prawy górny róg -->
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#E5171E">
+            android:layout_margin="4dp"
+            android:background="#FF0000">
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_gravity="top|right"
-                android:layout_margin="16dp"
-                android:text="button2"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="top|end"
+                android:layout_margin="8dp"
+                android:background="#FFFF00"
+                android:gravity="left|start"
+                android:text="*"
+                android:textStyle="bold" />
         </FrameLayout>
 
     </LinearLayout>
 
-    <!-- ======= WIERSZ ŚRODKOWY ======= -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="0.6"
+        android:layout_height="64dp"
         android:orientation="horizontal">
 
-        <!-- Lewy pas poziomy -->
-        <FrameLayout
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#FF8A25" />
+            android:layout_margin="4dp"
+            android:background="#FF8A2A"/>
 
-        <!-- Skrzyżowanie pasów (środek) -->
-        <FrameLayout
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.6"
-            android:background="#FF8A25" />
+            android:layout_weight="0.5"
+            android:layout_margin="4dp"
+            android:background="#FF8A2A"/>
 
-        <!-- Prawy pas poziomy -->
-        <FrameLayout
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#FF8A25" />
-
+            android:layout_margin="4dp"
+            android:background="#FF8A2A"/>
     </LinearLayout>
 
-    <!-- ======= WIERSZ DOLNY ======= -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal">
 
-        <!-- Lewy dolny róg -->
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#E5171E">
+            android:layout_margin="4dp"
+            android:background="#FF0000">
 
-            <Button
-                android:id="@+id/button3"
-                android:layout_gravity="bottom|left"
-                android:layout_margin="16dp"
-                android:text="button3"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="8dp"
+                android:background="#FFFF00"
+                android:gravity="right|end"
+                android:text="*"
+                android:textStyle="bold" />
         </FrameLayout>
 
-        <!-- Pionowy pomarańczowy pas -->
-        <FrameLayout
+        <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="0.6"
-            android:background="#FF8A25" />
+            android:layout_weight="0.5"
+            android:layout_margin="4dp"
+            android:background="#FF8A2A"/>
 
-        <!-- Prawy dolny róg -->
         <FrameLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#E5171E">
+            android:layout_margin="4dp"
+            android:background="#FF0000">
 
-            <Button
-                android:id="@+id/button4"
-                android:layout_gravity="bottom|right"
-                android:layout_margin="16dp"
-                android:text="button4"/>
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="8dp"
+                android:background="#FFFF00"
+                android:gravity="left|start"
+                android:text="*"
+                android:textStyle="bold"
+
+                />
         </FrameLayout>
 
     </LinearLayout>
